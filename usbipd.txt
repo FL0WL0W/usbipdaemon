@@ -5,23 +5,19 @@ modprobe usbip_host
 exit
 sudo nano /usr/bin/usbip-bindall
 
-sudo usbip list -p -l | grep -v '0424:ec00#'| grep -v '0424:7800#'| grep -v '10c4:8a2a#'| grep -v '0b95:772a#' | cut '-d=' -f2 | cut '-d#' -f1 | xargs -L 1 -r sudo bash -c 'usbip bind -b"$0" '
+usbip list -p -l | grep -v '0424:ec00#'| grep -v '0424:7800#'| grep -v '10c4:8a2a#'| grep -v '0b95:772a#' | cut '-d=' -f2 | cut '-d#' -f1 | xargs -L 1 -r bash -c 'usbip bind -b"$0" '
 
 
 sudo nano /usr/bin/usbip-unbindall
 
-sudo usbip list -p -l | grep -v '0424:ec00#'| grep -v '0424:7800#'| grep -v '10c4:8a2a#'| grep -v '0b95:772a#' | cut '-d=' -f2 | cut '-d#' -f1 | xargs -L 1 -r sudo bash -c 'usbip unbind -b"$0" '
+usbip list -p -l | grep -v '0424:ec00#'| grep -v '0424:7800#'| grep -v '10c4:8a2a#'| grep -v '0b95:772a#' | cut '-d=' -f2 | cut '-d#' -f1 | xargs -L 1 -r bash -c 'usbip unbind -b"$0" '
 
 
-sudo nano /usr/bin/usbip-bindall-loop
+sudo nano /etc/udev/rules.d/bindall.rules
 
-while [ true ]
-do
-usbip-bindall
-sleep 5
-done
+ACTION=="add", RUN+="/bin/bash /usr/bin/usbip-bindall"
 
-
+sudo udevadm control --reload
 sudo nano /lib/systemd/system/usbipd.service
 
 [Unit]
@@ -32,7 +28,7 @@ Restart=on-failure
 RestartSec=5s
 Type=forking
 ExecStart=/usr/sbin/usbipd -D
-ExecStartPost=/bin/sh -c "usbip-bindall-loop"
+ExecStartPost=/bin/sh -c "usbip-bindall"
 ExecStop=/bin/sh -c "usbip-unbindall; killall usbipd"
 [Install]
 WantedBy=multi-user.target
