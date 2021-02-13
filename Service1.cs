@@ -8,12 +8,14 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using System.Threading;
 
 namespace usbipdaemon
 {
     public partial class Service1 : ServiceBase
     {
         bool NotStopped = true;
+        Thread _thread;
 
         public Service1()
         {
@@ -22,7 +24,8 @@ namespace usbipdaemon
 
         protected override void OnStart(string[] args)
         {
-            Start();
+            _thread = new Thread(Start);
+            _thread.Start();
         }
 
         public void Start()
@@ -70,13 +73,16 @@ namespace usbipdaemon
                         deviceProcess.Start();
                     }
                 }
-                System.Threading.Thread.Sleep(5 * 1000);
+                Thread.Sleep(5 * 1000);
             }
         }
 
         protected override void OnStop()
         {
             NotStopped = false;
+            Thread.Sleep(10 * 1000);
+            if (_thread != null && _thread.IsAlive)
+                _thread.Abort();
         }
     }
 }
