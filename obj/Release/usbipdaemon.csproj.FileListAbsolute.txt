@@ -5,3 +5,6 @@ C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Release\usbipdaemon.csp
 C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Release\usbipdaemon.csproj.CoreCompileInputs.cache
 C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Release\usbipdaemon.exe
 C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Release\usbipdaemon.pdb
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Release\usbipdaemon.ProjectInstaller.resources
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Release\usbipdaemon.Service1.resources
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Release\usbipdaemon.csproj.GenerateResource.cache

@@ -1,0 +1,38 @@
+﻿Installing assembly 'C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.InstallLog
+   assemblypath = C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe assembly.
+Committing assembly 'C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.InstallLog
+   assemblypath = C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe assembly.
+Remove InstallState file because there are no installers.
+Uninstalling assembly 'C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.InstallLog
+   assemblypath = C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe assembly.
+Installing assembly 'C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.InstallLog
+   assemblypath = C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe assembly.
+Committing assembly 'C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.InstallLog
+   assemblypath = C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe assembly.
+Remove InstallState file because there are no installers.
+Uninstalling assembly 'C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.InstallLog
+   assemblypath = C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe assembly.

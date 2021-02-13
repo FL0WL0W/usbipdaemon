@@ -5,3 +5,6 @@ C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Debug\usbipdaemon.exe
 C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Debug\usbipdaemon.pdb
 C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Debug\usbipdaemon.exe
 C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Debug\usbipdaemon.pdb
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Debug\usbipdaemon.ProjectInstaller.resources
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Debug\usbipdaemon.Service1.resources
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Debug\usbipdaemon.csproj.GenerateResource.cache
