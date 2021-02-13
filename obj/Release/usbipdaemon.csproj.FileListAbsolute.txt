@@ -1,0 +1,7 @@
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe.config
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.exe
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\bin\Release\usbipdaemon.pdb
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Release\usbipdaemon.csprojAssemblyReference.cache
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Release\usbipdaemon.csproj.CoreCompileInputs.cache
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Release\usbipdaemon.exe
+C:\Users\daniel\source\repos\usbipdaemon\usbipdaemon\obj\Release\usbipdaemon.pdb
