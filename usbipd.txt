@@ -1,0 +1,43 @@
+sudo apt-get install usbip
+sudo su root
+echo 'usbip_host' >> /etc/modules
+modprobe usbip_host
+exit
+sudo nano /usr/bin/usbip-bindall
+
+sudo usbip list -p -l | grep -v '0424:ec00#'| grep -v '0424:7800#'| grep -v '10c4:8a2a#'| grep -v '0b95:772a#' | cut '-d=' -f2 | cut '-d#' -f1 | xargs -L 1 -r sudo bash -c 'usbip bind -b"$0" '
+
+
+sudo nano /usr/bin/usbip-unbindall
+
+sudo usbip list -p -l | grep -v '0424:ec00#'| grep -v '0424:7800#'| grep -v '10c4:8a2a#'| grep -v '0b95:772a#' | cut '-d=' -f2 | cut '-d#' -f1 | xargs -L 1 -r sudo bash -c 'usbip unbind -b"$0" '
+
+
+sudo nano /usr/bin/usbip-bindall-loop
+
+while [ true ]
+do
+usbip-bindall
+sleep 5
+done
+
+
+sudo nano /lib/systemd/system/usbipd.service
+
+[Unit]
+Description=usbip host daemon
+After=network.target
+[Service]
+Restart=on-failure
+RestartSec=5s
+Type=forking
+ExecStart=/usr/sbin/usbipd -D
+ExecStartPost=/bin/sh -c "usbip-bindall-loop"
+ExecStop=/bin/sh -c "usbip-unbindall; killall usbipd"
+[Install]
+WantedBy=multi-user.target
+
+
+sudo systemctl --system daemon-reload
+sudo systemctl enable usbipd.service
+sudo reboot
