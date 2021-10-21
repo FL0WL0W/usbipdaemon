@@ -2,7 +2,7 @@
 Windows service that automatically attaches any usb device from usbip server.
 
 <p>
-  Released version under usbipdaemon/bin/Release<br/>
+  Released version under <a href="https://github.com/FL0WL0W/usbipdaemon/tree/main/usbipdaemon/bin/Release">usbipdaemon/bin/Release</a><br/>
   Set IP of usbip server in usbipdaemon.exe.config. multiple servers can be listed with IPs seperated by spaces.<br/>
   Install as windows service using install.bat as administrator<br/>
   <br/>
